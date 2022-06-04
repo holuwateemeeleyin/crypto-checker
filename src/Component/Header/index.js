@@ -6,19 +6,19 @@ export default function Header(props) {
     const {lightMode, setLightMode} = props
     return (
         <div className='header'>
-            <h3> Update </h3>
+            <h3> Crypto </h3>
             <div>
                 {
                     lightMode ?
                         <BsLightbulbOffFill
                             onClick={() => setLightMode(!lightMode)}
-                            size={24}
+                            size={28}
                             className='light-out'
                         />
                         :
                         <RiLightbulbFlashLine
                             onClick={() => setLightMode(!lightMode)}
-                            size={28}
+                            size={33}
                             className='light-icon'
                         />
                 }
