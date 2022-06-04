@@ -12,4 +12,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* font-size: 1.6rem; */
+}
+.light-icon{
+  color:#ffee00;
+}
+.light-out{
+  color: #a8000e;
 }
