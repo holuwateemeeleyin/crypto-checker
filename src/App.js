@@ -33,8 +33,8 @@ function App() {
   }
 
   if(loading){
-    return <div className='loading'>
-      loading....
+    return <div className='loader-container'>
+      <div className='loader'></div>
     </div>
   }
   return (
