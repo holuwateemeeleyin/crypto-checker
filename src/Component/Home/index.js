@@ -12,7 +12,7 @@ export default function Home(props) {
                 Search
             </div>
             <div className='coin-cointainer'>
-                <div className='heading'>
+                <div className='coin-heading'>
                     <p> Rank </p>
                     <p> Name </p>
                     <p> Price</p>

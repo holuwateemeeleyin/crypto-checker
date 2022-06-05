@@ -5,10 +5,13 @@ import NumericLabel from 'react-pretty-numbers'
 export default function Items(props) {
     const { item } = props
     return (
-        <Link to={`${item.id}`} className='link'>
+        <Link to={`${item.id}`}>
             <div className='coin-row'>
                 <p>{item.market_cap_rank}</p>
-                <p> <img src={item.image} alt='image' width={25}/> {item.symbol.toUpperCase()}</p>
+                <div className='symbol-img'> 
+                    <img src={item.image} alt='image' width={25}/>
+                    <p>{item.symbol.toUpperCase()}</p>
+                </div>
                 <NumericLabel params={{currency: true, commafy:true,  shortFormat: true}}>{item.current_price}</NumericLabel>
                 <NumericLabel params={{currency: true, commafy:true}}>{item.market_cap}</NumericLabel>
                 <NumericLabel>{item.total_supply}</NumericLabel>
