@@ -9,7 +9,7 @@ export default function Items(props) {
             <div className='coin-row'>
                 <p>{item.market_cap_rank}</p>
                 <div className='symbol-img'> 
-                    <img src={item.image} alt='image' width={25}/>
+                    <img src={item.image} alt='coin' width={25}/>
                     <p>{item.symbol.toUpperCase()}</p>
                 </div>
                 <NumericLabel params={{currency: true, commafy:true,  shortFormat: true}}>{item.current_price}</NumericLabel>
