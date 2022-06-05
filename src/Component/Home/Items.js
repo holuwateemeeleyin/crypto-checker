@@ -13,9 +13,9 @@ export default function Items(props) {
                     <p>{item.symbol.toUpperCase()}</p>
                 </div>
                 <NumericLabel params={{currency: true, commafy:true,  shortFormat: true}}>{item.current_price}</NumericLabel>
-                <NumericLabel params={{currency: true, commafy:true}}>{item.market_cap}</NumericLabel>
-                <NumericLabel>{item.total_supply}</NumericLabel>
-                <NumericLabel params={{currency: true, commafy:true}}>{item.total_volume}</NumericLabel>
+                <p className='hide-mobile'>{item.market_cap.toLocaleString()}</p>
+                <p className='hide-mobile' >{item.total_supply === null ? 'unavailable' : item.total_supply.toLocaleString() }</p>
+                <p className='hide-mobile'>${item.total_volume.toLocaleString()}</p>
                 <p className={item.price_change_percentage_24h < 0 ? 'red': 'green'}>{item.price_change_percentage_24h.toFixed(3)}%</p>
             </div>
         </Link>

@@ -89,3 +89,21 @@ a{
 .green{
   color: #00ff00;
 }
+
+.coin-row:hover {
+  transform: scale(1.08);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+@media screen and (max-width:770px) {
+  .coin-heading{
+    font-size: 1rem;
+  }
+  .header h3{
+    font-size: 2rem;
+  }
+.hide-mobile{
+ display: none; 
+}
+}

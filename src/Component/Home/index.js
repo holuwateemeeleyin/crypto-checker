@@ -16,9 +16,9 @@ export default function Home(props) {
                     <p> Rank </p>
                     <p> Name </p>
                     <p> Price</p>
-                    <p> Market Cap </p>
-                    <p> Supply </p>
-                    <p> Volume </p>
+                    <p className='hide-mobile'> Market Cap </p>
+                    <p className='hide-mobile'> Supply </p>
+                    <p className='hide-mobile'> Volume </p>
                     <p> Change (24Hr)</p>
                 </div>
                     {
