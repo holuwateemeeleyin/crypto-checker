@@ -21,16 +21,3 @@ export default function Items(props) {
         </Link>
     )
 }
-
-
-
-{/* <tr>
-        <td>{item.market_cap_rank}</td>
-        <td>{item.name}</td>
-        <td>{`$ ${item.current_price}`}</td>
-        <td>{`$${item.market_cap}`}</td>
-        <td>{`$${item.high_24h}`}</td>
-        <td>{item.name}</td>
-        <td>{item.name}</td>
-        <td>{item.name}</td>
-    </tr> */}

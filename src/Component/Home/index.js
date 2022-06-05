@@ -1,6 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import Table from 'react-bootstrap/Table'
 import Items from './Items'
 
 export default function Home(props) {
