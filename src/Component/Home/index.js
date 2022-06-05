@@ -27,26 +27,6 @@ export default function Home(props) {
                         :null
                     }
             </div>
-            {/* <Table responsive striped bordered hover variant="dark">
-                <thead>
-                    <tr>
-                        <th> Rank </th>
-                        <th> Name</th>
-                        <th> Price</th>
-                        <th> Market Cap</th>
-                        <th> High (24Hr)</th>
-                        <th> Supply </th>
-                        <th> Volume </th>
-                        <th> Change (24Hr)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    { cryptos ?
-                    cryptos.map((item) => (
-                        <Items item={item} key={item.id} />
-                    )): null}
-                </tbody>
-            </Table> */}
         </div>
     )
 }
